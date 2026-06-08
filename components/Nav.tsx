@@ -31,14 +31,22 @@ export function Nav() {
           ))}
         </div>
 
-        <a
-          href={site.calendly}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-fg transition-colors hover:border-accent/60 hover:bg-surface-2"
-        >
-          Book a call
-        </a>
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          <a
+            href={site.james}
+            className="rounded-full px-3 py-2 text-sm font-medium text-muted transition-colors hover:text-fg"
+          >
+            Login
+          </a>
+          <a
+            href={site.calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-fg transition-colors hover:border-accent/60 hover:bg-surface-2"
+          >
+            Book a call
+          </a>
+        </div>
       </nav>
     </header>
   );
